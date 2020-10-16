@@ -90,7 +90,7 @@ exports.create = (req, res) => {
         // order.amount
         const emailData = {
             to: 'ezeedge@gmail.com', // admin
-            from: 'noreply@ecommerce.com',
+            from: 'sendgridcuentagallardo@gmail.com',
             subject: `A new order is received`,
             html: `
             <h1>Hey Admin, Somebody just made a purchase in your ecommerce store</h1>
@@ -124,8 +124,8 @@ exports.create = (req, res) => {
         // email to buyer
         const emailData2 = {
             to: order.user.email,
-            from: 'noreply@ecommerce.com',
-            subject: `You order is in process`,
+            from: 'sendgridcuentagallardo@gmail.com',
+            subject: `Tu orden esta en proceso`,
             html: `
             <h1>Hey ${req.profile.name}, Thank you for shopping with us.</h1>
             <h2>Total productos comprados: ${order.products.length}</h2>
